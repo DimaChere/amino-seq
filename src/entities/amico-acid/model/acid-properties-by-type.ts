@@ -1,5 +1,5 @@
-import type { AcidProperty } from "../types/acid-property";
-import type { AcidType } from "../types/acid-type";
+import type { AcidProperty } from "./types/acid-property";
+import type { AcidType } from "./types/acid-type";
 
 export const acidPropertyByType: Record<AcidType, AcidProperty> = {
     C: "cysteine",
@@ -22,4 +22,5 @@ export const acidPropertyByType: Record<AcidType, AcidProperty> = {
     H: "polarUncharged",
     Q: "polarUncharged",
     N: "polarUncharged",
+    "-": "empty",
 } as const;

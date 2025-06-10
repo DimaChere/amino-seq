@@ -18,4 +18,5 @@ export type AcidType =
     | "T" // Threonine
     | "W" // Tryptophan
     | "Y" // Tyrosine
-    | "V"; // Valine
+    | "V" // Valine
+    | "-";

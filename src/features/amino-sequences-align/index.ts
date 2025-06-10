@@ -1,0 +1,1 @@
+export { AminoSequenceAlign } from "./ui";

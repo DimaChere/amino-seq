@@ -23,3 +23,5 @@ export const sequencesFormSchema = z
 
 export type SequencesForm = z.infer<typeof sequencesFormSchema>;
 export const aminoFormResolver = zodResolver(sequencesFormSchema);
+
+export const initialState: SequencesForm = { sequence1: "", sequence2: "" };

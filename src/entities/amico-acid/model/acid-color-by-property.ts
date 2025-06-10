@@ -1,4 +1,4 @@
-import type { AcidProperty } from "../types/acid-property";
+import type { AcidProperty } from "./types/acid-property";
 
 export const acidColorByProperty: Record<AcidProperty, string> = {
     cysteine: "#ffea00",
@@ -7,4 +7,5 @@ export const acidColorByProperty: Record<AcidProperty, string> = {
     negativelyCharged: "#fc9cac",
     positivelyCharged: "#bb99ff",
     polarUncharged: "#80bfff",
+    empty: "transparent",
 } as const;

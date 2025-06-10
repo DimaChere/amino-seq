@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import { MainPage } from "../pages/main/ui";
+import { MainPage } from "@pages/main";
 
 function App() {
     return (

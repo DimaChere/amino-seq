@@ -4,4 +4,5 @@ export type AcidProperty =
     | "glycine"
     | "negativelyCharged"
     | "positivelyCharged"
-    | "polarUncharged";
+    | "polarUncharged"
+    | "empty";
