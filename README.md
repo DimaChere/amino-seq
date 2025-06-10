@@ -1,54 +1,73 @@
-# React + TypeScript + Vite
+# Amino Sequence Alignment Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application for aligning and analyzing amino acid sequences, built with React, TypeScript, and Material-UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern, responsive user interface built with Material-UI
+- Type-safe development with TypeScript
+- Form handling with React Hook Form and Zod validation
+- Fast development and build times with Vite
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend Framework:** React 19
+- **Language:** TypeScript
+- **UI Library:** Material-UI (MUI)
+- **Form Handling:** React Hook Form with Zod validation
+- **Build Tool:** Vite
+- **Package Manager:** Yarn
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Project Structure
+
+```
+src/
+├── app/        # Application-wide configurations and providers
+├── entities/   # Core business entities
+├── features/   # Feature-specific components and logic
+├── pages/      # Page components
+├── shared/     # Shared utilities, hooks, and components
+└── widgets/    # Reusable UI components
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Prerequisites
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js (Latest LTS version recommended)
+- Yarn package manager
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Installation
+
+1. Clone the repository:
+```bash
+git clone [repository-url]
+cd amino-seq
 ```
+
+2. Install dependencies:
+```bash
+yarn install
+```
+
+3. Start the development server:
+```bash
+yarn dev
+```
+
+The application will be available at `http://localhost:5173` by default.
+
+### Available Scripts
+
+- `yarn dev` - Start development server
+- `yarn build` - Build for production
+- `yarn lint` - Run ESLint
+- `yarn preview` - Preview production build locally
+
+## Development
+
+This project uses:
+- TypeScript for type safety
+- ESLint for code linting
+- Prettier for code formatting
+- Material-UI for consistent design
+- React Hook Form for form handling
+- Zod for schema validation
